@@ -1,0 +1,14 @@
+--- Modelagem do Grafo (YouTube)
+-- Nós:
+- User (username, country, age)
+- Channel (name, category)
+- Post (title, date, views)
+- Tag (name)
+
+-- Relações:
+- (User)-[:FOLLOWS]->(User)
+- (User)-[:SUBSCRIBED_TO]->(Channel)
+- (Channel)-[:CREATED]->(Post)
+- (User)-[:LIKED]->(Post)
+- (User)-[:COMMENTED]->(Post)
+- (Post)-[:HAS_TAG]->(Tag)
